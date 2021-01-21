@@ -16,11 +16,11 @@
     <h1>Olá Mundo</h1>
     <p>Já me livrei da maldição</p>
     <script>
-      nome = String(window.prompt("Qual seu nome?"));
-      idade = window.prompt("E a sua idade?");
-      nota = window.prompt("Qual sua nota?");
-      window.alert("O aluno ${nome} com ${idade} anos tirou a nota " + $String(nota));
-      window.alert("O tamanho do nome " + nome + " é " + teste);
+      var nome = String(window.prompt("Qual seu nome?"));
+      var idade = Number(window.prompt("E a sua idade?"));
+      var nota = Number(window.prompt("Qual sua nota?"));
+      Window.alert ('O aluno '+$String(nome) +' com ' +$String(idade)+' anos tirou a nota ' +$String(nota)); //informa os dados
+      Window.alert ("O tamanho do nome " + $String(nome) + " é " + nome.lenght); // informa o tamanho do nome
     </script>
 </body>
 </html>

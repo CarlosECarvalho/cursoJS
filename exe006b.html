@@ -19,8 +19,12 @@
       var nome = String(window.prompt("Qual seu nome?"));
       var idade = Number(window.prompt("E a sua idade?"));
       var nota = Number(window.prompt("Qual sua nota?"));
-      window.alert ('O aluno '+ nome +' com ' + idade +' anos tirou a nota ' + nota); //informa os dados
-      window.alert ("O tamanho do nome " + nome + " é " + nome.length); // informa o tamanho do nome
+      window.alert (`O aluno  ${nome} com ${idade} anos tirou a nota ${nota}`); //informa os dados
+      document.writeln (`O tamanho do nome ${nome}  é ${nome.length}<br/>`); // informa o tamanho do nome
+      document.writeln (`O nome ${nome} em maiúsculo é ${nome.toUpperCase()}<br/>`);//método para tornar as letras maiusculas
+      document.writeln (`O nome ${nome} em minúsculo é ${nome.toLowerCase()}<br/>`);//método para tornar as letras minusculas
+      document.writeln (`A nota ajustada é ${nota.toFixed(2).replace('.',',')}<br/>`);//método para tornas as casas decimais fixas em número de digitos, e método para trocar . por , em notação decimal
+      document.write (`A nota como salário seria ${nota.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}<br/>`)//chama o método com o objeto de localizaçãp para moeda.
     </script>
 </body>
 </html>

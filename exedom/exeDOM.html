@@ -14,7 +14,7 @@
     <h1>Iniciando estudos de DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JS.</p>
-    <div>Clique em mim.</div>
+    <div id="msg">Clique em mim.</div>
     
     <script>
         var p1 = window.document.getElementsByTagName('p')[1];//seleciona o elemento pela tag e de acordo com o seletor de ordem, indo do 0 para o primeiro até a ultima tag da pagina
@@ -23,6 +23,13 @@
         var corpo = window.document.body; //seleciona a tag
         corpo.style.background = 'black'; //altera o estilo do background
         document.write(p1.innerHTML);//escreve no corpo com as condições de tags do texto
+        /*var d = window.document.getElementById('msg');
+        d.style.background = 'green';
+        d.innerText = 'Estou aguardando...' */
+        /*var d = document.getElementsByName('msg')[0];
+        d.innerText = 'Estou aguardando?'//seleciona o elemento pelo name e altera seu texto, igual o anterior.*/
+        var d = document.querySelector('div#msg');
+        d.style.color = 'blue'
 
     </script>
 

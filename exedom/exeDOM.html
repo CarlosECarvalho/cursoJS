@@ -17,6 +17,12 @@
     <div>Clique em mim.</div>
     
     <script>
+        var p1 = window.document.getElementsByTagName('p')[1];//seleciona o elemento pela tag e de acordo com o seletor de ordem, indo do 0 para o primeiro até a ultima tag da pagina
+        document.write("Está escrito assim: "+p1.innerText +'<br>');// informa no corpo do documento o texto conforme a var recebeu
+        p1.style.color='blue';//altera o estilo do documento na tag selecionada
+        var corpo = window.document.body; //seleciona a tag
+        corpo.style.background = 'black'; //altera o estilo do background
+        document.write(p1.innerHTML);//escreve no corpo com as condições de tags do texto
 
     </script>
 

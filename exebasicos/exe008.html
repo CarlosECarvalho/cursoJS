@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: silver;margin: 5%;}
+        div{margin: 1%;}
+        ul{font: normal 12pt arial;}
+        .prim{color: red;}
+        .seg{color: blue;}
+        .ter{color: green;}
+        .quar{color: dodgerblue;}
+        h3, p{margin: 0.3%;}
+        /*span{padding: 2%;}*/
+
+    </style>
+</head>
+<body>
+    <div>
+    <h2>Operadores relacionais do JS</h2> 
+    <ul><li> <strong>></strong>  - Maior Que.</li>
+        <li> <strong><</strong>  - Menor Que.</li>
+        <li> <strong>>=</strong> - Maior ou Igual.</li>
+        <li> <strong><=</strong> - Menor ou Igual.</li>
+        <li> <strong>==</strong> - Igual.</li>
+        <li> <strong>!=</strong> - Diferente.</li>
+        <li> <strong>===</strong> - Estritamente Igual</li>
+        <li> <strong>!==</strong> - Estritamente desigual</li>
+        <p> Os operadores relacionais sempre dão resultados lógicos (true ou false), pois não testam o tipo da variavel informada. Se for testado 5 == '5' a resposta será true. <br> Para testar a identidade (tipo da variavel) deve-se usar o operador ===.</p>
+    </ul>
+    <h2>Operadores lógicos do JS</h2> 
+    <ul><li> <strong>! - Negação (NAO)</strong></li>
+        <p>Modifica o valor testado para seu valor contrário. Ex: <code> !a = 5>7</code> se testar <var>a</var> será true </p>
+        <li> <strong>&& - Conjunção (E)</strong></li>
+        <p>Testa 2 valores, se ambos forem true o resultado será True. Qualquer um dos valores senod False, o resultado é False.</p>
+        <li><strong> || - Disjunção (OU)</strong></li>
+        <p>Testa 2 valores, se qualquer um deles for True o resultado seráTrue. Somente se nenhum deles for verdadeiro, o resultado será False.</p>
+    </ul>
+    <h2>Operador Ternário</h2>
+    <ul><li> <strong> ? : </strong></li>
+    <p> Testa uma expressão lógica, com 2 resultados possíveis. O resultado verdadeiro vem depois do ? e o falso depois do : .Exemplo: <code><var>nota</var> >= 7.0? Aprovado ou Reprovado</code></p></ul>
+
+    <h2>Precedência entre operadores gerais</h2>
+    <ul><strong><li class="prim">Operadores aritméticos.</li>
+        <li class="seg">Operadores relacionais.</li>
+        <li class="ter">Operadores lógicos</li>
+        <ul><strong><li class="prim">!</li>
+            <li class="seg">&&</li>
+            <li class="ter">||</li></strong></ul>
+        <li class="quar"> Operador ternário.</li></strong>
+    </ul>
+    <p>As cores representam a prioridade de precessão dos Operadores em uma expressão. Vermelho é o mais alto, azul o secundário, verde o terceiro e o ciano o último a ser calculado.</p>
+
+    </div>
+</body>
+<footer><a href="exe007.html"> Voltar </a></footer>
+</html>
